@@ -9,7 +9,7 @@ A full-featured MERN stack application that allows companies or teams to efficie
 The frontend is deployed on Vercel for preview purposes only.  
 You can check the UI and try basic interactions here:
 
-🔗 [Live Preview (Frontend Only)]https://employee-management-system-virid-six.vercel.app/
+🔗 [Live Preview (Frontend Only)] https://employee-management-system-virid-six.vercel.app/
 
 > ⚠️ Note: Backend functionalities (like login, CRUD operations) will not work in this deployment.  
 > This deployment is meant only to showcase the design and structure of the project.
