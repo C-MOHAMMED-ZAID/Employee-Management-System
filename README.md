@@ -6,7 +6,13 @@ A full-featured MERN stack application that allows companies or teams to efficie
 
 ## 🚀 Live Demo
 
-> Coming soon (deploy using Render, Vercel, or Netlify + MongoDB Atlas)
+The frontend is deployed on Vercel for preview purposes only.  
+You can check the UI and try basic interactions here:
+
+🔗 [Live Preview (Frontend Only)]https://employee-management-system-virid-six.vercel.app/
+
+> ⚠️ Note: Backend functionalities (like login, CRUD operations) will not work in this deployment.  
+> This deployment is meant only to showcase the design and structure of the project.
 
 ---
 
@@ -49,7 +55,7 @@ The app was rebuilt from a legacy version and enhanced with:
 - Create, Read, Update, Delete employees
 - Create, Update, Delete salaries
 - View all user accounts
-- manage user accounts
+- Manage user accounts
 
 ### 🙋 Employee Module
 - Can log in and view only their own profile
@@ -74,10 +80,10 @@ The app was rebuilt from a legacy version and enhanced with:
 
 ## 🧾 User Roles & Permissions
 
-| Role     | Description                | Access Level                                      |
-|----------|----------------------------|---------------------------------------------------|
-| Admin    | System admin               | Full CRUD access to employees and salaries        |
-| Employee | Regular user               | Can only view their own profile                  |
+| Role     | Description      | Access Level                           |
+|----------|------------------|----------------------------------------|
+| Admin    | System admin     | Full CRUD access to employees/salaries |
+| Employee | Regular user     | Can only view their own profile        |
 
 ---
 
@@ -115,12 +121,12 @@ root/
 ├── server/ (Node Backend)
 │   ├── models/                 # User, Employee, Salary schemas
 │   ├── routes/                 # API endpoints (auth, employees, salaries)
-│   ├── controllers/           # Business logic
-│   ├── middleware/            # requireLogin, requireAdmin
-│   ├── config/                # DB connection
-│   └── server.js              # Main entry
+│   ├── controllers/            # Business logic
+│   ├── middleware/             # requireLogin, requireAdmin
+│   ├── config/                 # DB connection
+│   └── server.js               # Main entry
 │
-├── .env                       # Environment secrets (ignored in Git)
+├── .env                        # Environment secrets (ignored in Git)
 ├── .gitignore
 └── README.md
 ```
@@ -179,31 +185,31 @@ root/
 
 ### 🔐 Auth
 
-| Method | Endpoint        | Description                  |
-|--------|-----------------|------------------------------|
-| POST   | /api/auth/register | Register new user           |
-| POST   | /api/auth/login    | Login with email/password   |
-| POST   | /api/auth/google   | Google OAuth login          |
+| Method | Endpoint           | Description                |
+|--------|--------------------|----------------------------|
+| POST   | /api/auth/register | Register new user          |
+| POST   | /api/auth/login    | Login with email/password  |
+| POST   | /api/auth/google   | Google OAuth login         |
 
 ### 👤 Employee
 
-| Method | Endpoint             | Description                          |
-|--------|----------------------|--------------------------------------|
-| GET    | /api/employees/me    | Get logged-in user's employee data   |
-| GET    | /api/employees/      | (Admin) List all employees           |
-| POST   | /api/employees/      | (Admin) Create employee              |
-| PUT    | /api/employees/:id   | (Admin) Update employee              |
-| DELETE | /api/employees/:id   | (Admin) Delete employee              |
+| Method | Endpoint           | Description                        |
+|--------|--------------------|------------------------------------|
+| GET    | /api/employees/me  | Get logged-in user's employee data |
+| GET    | /api/employees/    | (Admin) List all employees         |
+| POST   | /api/employees/    | (Admin) Create employee            |
+| PUT    | /api/employees/:id | (Admin) Update employee            |
+| DELETE | /api/employees/:id | (Admin) Delete employee            |
 
 ### 💰 Salary
 
-| Method | Endpoint             | Description                          |
-|--------|----------------------|--------------------------------------|
-| GET    | /api/salaries/       | (Admin) List all salaries            |
-| GET    | /api/salaries/:id    | Get individual employee's salary     |
-| POST   | /api/salaries/       | (Admin) Create salary                |
-| PUT    | /api/salaries/:id    | (Admin) Update salary                |
-| DELETE | /api/salaries/:id    | (Admin) Delete salary                |
+| Method | Endpoint           | Description                      |
+|--------|--------------------|----------------------------------|
+| GET    | /api/salaries/     | (Admin) List all salaries        |
+| GET    | /api/salaries/:id  | Get individual employee's salary |
+| POST   | /api/salaries/     | (Admin) Create salary            |
+| PUT    | /api/salaries/:id  | (Admin) Update salary            |
+| DELETE | /api/salaries/:id  | (Admin) Delete salary            |
 
 ---
 
