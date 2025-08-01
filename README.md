@@ -1,4 +1,4 @@
-# 🧑‍💼 Employee Management App
+# 🧑‍💼 Employee Management System
 
 A full-featured MERN stack application that allows companies or teams to efficiently manage employees and salary data with role-based access control. Built for both administrators and employees, the app supports authentication, CRUD operations, and structured modules to ensure clarity, privacy, and productivity.
 
