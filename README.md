@@ -16,6 +16,12 @@ You can check the UI and try basic interactions here:
 
 ---
 
+🎥 **Project Walkthrough Video**  
+Check out this short 2-minute walkthrough where I explain the features, tech stack, and my contributions.  
+[▶ Watch the video]([link-to-your-video](https://youtu.be/3xBmHBnyhNA))
+
+---
+
 ## 📚 Table of Contents
 
 - [About the Project](#about-the-project)
@@ -244,3 +250,4 @@ This project is still under development, but suggestions and PRs are welcome. Fo
 - Built by Mohammed Zaid
 - Email: mohammedzaid.connect@gmail.com
 - LinkedIn: linkedin.com/in/mohammedzaidc
+
